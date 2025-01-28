@@ -10,7 +10,7 @@ class GreetController extends Controller
     {
 
             $data = [
-                'name' => '$Mark'
+                'name' => 'Mark'
             ];
 
         return view('greet',$data);

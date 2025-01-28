@@ -6,4 +6,5 @@ Route::get('/', function () {
     return 'Hello,Laravel!';
 });
 
-Route::get('/greet',[GreetController::class, 'greetMethod']);
+Route::get('/greet', [\App\Http\Controllers\GreetController::class, 'greetMethod']);
+
