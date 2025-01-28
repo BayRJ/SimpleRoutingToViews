@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 
 class GreetController extends Controller
 {
-    public function index()
+    public function greetMethod()
     {
-        return view('greet');
+
+            $data = [
+                'name' => '$Mark'
+            ];
+
+        return view('greet',$data);
     } 
 }
